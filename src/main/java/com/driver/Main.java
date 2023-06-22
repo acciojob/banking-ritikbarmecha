@@ -1,12 +1,11 @@
 package com.driver;
-import java.lang.*;
+
 public class Main {
     public static void main(String[] args) throws Exception {
         BankAccount bankAccount = new BankAccount("Aniruddha", 5000, 2000);
-        System.out.println(bankAccount.getBalance());
-        System.out.println(bankAccount.getName());
+        
         try {
-            System.out.println(bankAccount.generateAccountNumber(100, 9));
+            System.out.println(bankAccount.generateAccountNumber(5, 40));
         }catch (Exception exception){
             System.out.println(exception.toString());
         }
@@ -18,5 +17,6 @@ public class Main {
         }catch (Exception exception) {
             System.out.println(exception.toString());
         }
+
     }
 }
